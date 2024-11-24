@@ -1,0 +1,20 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "title": "API Example",
+      "version": "1.0.0"
+    },
+    "paths": {
+      "/api/producto": {
+        "get": {
+          "summary": "Get all products",
+          "responses": {
+            "200": {
+              "description": "Successful operation"
+            }
+          }
+        }
+      }
+    }
+  }
+  
