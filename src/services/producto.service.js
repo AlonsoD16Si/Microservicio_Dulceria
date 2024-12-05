@@ -8,7 +8,18 @@ class ProductoService {
     return this.model.findAll(options);  
   }
 
- 
+  async updateProducto(id, productoData) {
+    return this.model.update(productoData, {
+      where: { producto_id: id }
+    });
+  }
+
+  async deleteProducto(id) {
+    return this.model.destroy({
+      where: { producto_id: id }
+    });
+  }
+
   async getById(id, options = {}) {
     return this.model.findOne({
       where: { producto_id: id },
